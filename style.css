@@ -10,10 +10,28 @@
   background-color: #EC715F;
 }
 
-.header-nav{
+.header-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
   width: 1024px;
+  margin: 0 auto;
 }
 
 .img-header{
   height: 70px;
+  float: left;
+
+}
+
+.nav-list-item{
+  list-style: none;
+  float: left;
+  font-size: 16px;
+  color: #FAFAFA;
+  padding: 0 30px;
+
 }
