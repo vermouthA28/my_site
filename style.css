@@ -56,3 +56,30 @@
   font-size: 20px;
   color: #FAFAFA;
 }
+
+.portfolio{
+  background-color: #ECEFF1;
+}
+
+h2::after{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+}
+
+.pf-heading{
+  padding-top: 90px;
+  text-align: center;
+  font-size: 32px;
+  font-color: #000000;
+}
+
+.pf-text{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-color: #000000;
+}
