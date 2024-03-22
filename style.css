@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 
-.img-header{
+.header-img{
   height: 70px;
   float: left;
 
@@ -34,4 +34,25 @@
   color: #FAFAFA;
   padding: 0 30px;
 
+}
+
+.main-visual{
+  background-image: url(img2/mv.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  text-align: center;
+}
+
+.mv-title{
+  padding-top: 200px;
+  font-size: 64px;
+  color: #FAFAFA;
+}
+
+.mv-text{
+  padding-top: 10px;
+  font-size: 20px;
+  color: #FAFAFA;
 }
