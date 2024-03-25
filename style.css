@@ -87,31 +87,48 @@ h2::after{
 
 .pf-picture-group{
   display: flex;
+  flex-flow: row wrap;
   width: 920px;
   padding: 30px 0 90px 0;
   margin: 0 auto;
-
 }
 
-.pf-picture-group-bg-1{
+.pf-picture{
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.pf-picture:nth-child(-n+3){
+  margin-top: 0;
+}
+
+.bg-1{
   background-image: url(img2/sketch.jpg);
+  margin: 0 10px 10px 0;
 }
-.pf-picture-group-bg-2{
+
+.bg-2{
   background-image: url(img2/websuku.png);
+  margin: 0 10px 10px 0;
 }
-.pf-picture-group-bg-3{
+
+.bg-3{
   background-image: url(img2/write.jpg);
-
+  margin: 0 0 10px 0;
 }
-.pf-picture-group-bg-4{
+
+.bg-4{
   background-image: url(img2/webcamp.png);
-
+  margin: 0 10px 0 0;
 }
-.pf-picture-group-bg-5{
+
+.bg-5{
   background-image: url(img2/talk.jpg);
-
+  margin: 0 10px 0 0;
 }
-.pf-picture-group-bg-6{
-  background-image: url(img2/webcamp-mother.jpg);
 
+.bg-6{
+  background-image: url(img2/webcamp-mother.png);
 }
