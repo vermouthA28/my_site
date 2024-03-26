@@ -33,8 +33,14 @@
   font-size: 16px;
   color: #FAFAFA;
   padding: 0 30px;
-
 }
+
+.nav-list-item a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+
 
 .main-visual{
   background-image: url(img2/mv.png);
