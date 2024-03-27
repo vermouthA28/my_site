@@ -3,6 +3,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0af45ee5ef.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>My Site</title>
@@ -16,14 +17,29 @@
           <a href="#main-visual">
             <img class=header-img src="img2/logo.png" />
           </a>
-        <div class="nav-list">
-          <ul>
-            <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-list-item"><a href="#feature">Feature</a></li>
-            <li class="nav-list-item"><a href="#profile">Profile</a></li>
-            <li class="nav-list-item"><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+
+          <div class="nav-list">
+            <ul>
+              <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+              <li class="nav-list-item"><a href="#feature">Feature</a></li>
+              <li class="nav-list-item"><a href="#profile">Profile</a></li>
+              <li class="nav-list-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+           <div class="hm-nav">
+            <ul>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="close"><span>閉じる</span></li>
+            </ul>
+          </div>
+
+          <div id="hamburger">
+            <span></span>
+          </div>
         </nav>
       </div>
     </header>
@@ -130,6 +146,9 @@
       </div>
 
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 
