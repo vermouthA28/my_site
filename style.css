@@ -280,8 +280,12 @@ h2::after{
   align-items: center;
 }
 
-
-
+/* パソコンの画面では非表示にする */
+@media screen and (min-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 
 /* ---------------------------- */
 /* ---- ハンバーガーアイコン ---- */
@@ -294,112 +298,84 @@ h2::after{
   .nav-list{
     display: none;
   }
-
-  #hamburger{
-  position: relative;
-  display: box;
-  width: 40px;
-  height: 40px;
-  margin: 0 0 0 auto;
-}
-#hamburger span{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  transform: translateY(-50%);
-}
-
-#hamburger::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-}
-
-#hamburger::after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-}
-
-.hm-nav {
-   z-index: 1;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100vh;
-   display: block;
-   width: 100%;
-   background: rgba(0, 0, 0, .8);
-   transition: all .2s ease-in-out;
-   opacity: 0;
-   transform: translateY(-100%);
+    /* チェックボックスを非表示にする */
+  .drawer_hidden {
+    display: none;
   }
 
-  .hm-nav ul {
-     padding: 0;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     height: 100%;
-  }
-  .hm-nav li {
-     margin: 0;
-     padding: 0;
-  }
-  .hm-nav li span {
-     font-size: 15px;
-     color: #fff;
-  }
-  .hm-nav li a, .sp-nav li span {
-     display: block;
-     padding: 20px 0;
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
   }
 
-  .hm-nav .close {
-   position: relative;
-   padding-left: 20px;
+  /* ハンバーガーメニューのアイコン */
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
   }
-  /*バツ印線1*/
-  .hm-nav .close::before {
-     content: '';
-     position: absolute;
-     top: 50%;
-     left: 0;
-     display: block;
-     width: 16px;
-     height: 1px;
-     background: #fff;
-     transform: rotate( 45deg );
+
+  /* 三本線の一番上の棒の位置調整 */
+  .drawer_open span:before {
+    bottom: 8px;
   }
-  /*バツ印線2*/
-  .hm-nav .close::after {
-     content: '';
-     position: absolute;
-     top: 50%;
-     left: 0;
-     display: block;
-     width: 16px;
-     height: 1px;
-     background: #fff;
-     transform: rotate( -45deg );
+
+  /* 三本線の一番下の棒の位置調整 */
+  .drawer_open span:after {
+    top: 8px;
+  }
+
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* メニューのデザイン*/
+  .nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+
+  /* メニュー黒ポチを消す */
+  .nav_list {
+    list-style: none;
+  }
+
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav_content {
+    left: 0;/* メニューを画面に入れる */
   }
 }
-
 
 
