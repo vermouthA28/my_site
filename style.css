@@ -291,28 +291,27 @@ h2::after{
 /* ---- ハンバーガーアイコン ---- */
 /* ---------------------------- */
 @media screen and (max-width:767px) {
-  .container{
-     width: 90%;
-     height: 50px;
+  .header{
+    width: 90%;
+    height: 50px;
   }
+
+  .container{
+    width: 90%;
+    height: 50px;
+  }
+
+  .header-img{
+    height: 50px;
+    float: left;
+  }
+
   .nav-list{
     display: none;
   }
     /* チェックボックスを非表示にする */
   .drawer_hidden {
     display: none;
-  }
-
-  /* ハンバーガーアイコンの設置スペース */
-  .drawer_open {
-    display: flex;
-    height: 60px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 100;/* 重なり順を一番上にする */
-    cursor: pointer;
   }
 
   /* ハンバーガーメニューのアイコン */
@@ -330,18 +329,21 @@ h2::after{
 
   }
 
+/* ハンバーガーアイコンの設置スペース */
   .drawer_open {
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-  cursor: pointer;
-  border: 2px solid #FAFAFA; /* 境界線を設定 */
-  border-radius: 5px; /* 必要に応じて角の丸みを調整 */
-}
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    border:  solid #FAFAFA; /* 境界線を設定 */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5%;
+  }
 
   /* 三本線の一番上の棒の位置調整 */
   .drawer_open span:before {
@@ -390,6 +392,17 @@ h2::after{
   #drawer_input:checked ~ .nav_content {
     left: 0;/* メニューを画面に入れる */
   }
+
+  /*メインビジュアル*/
+  .main-visual{
+    background-image: url(img2/code.png);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 650px;
+    text-align: center;
+  }
+
 }
 
 
