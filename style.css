@@ -402,6 +402,14 @@ h2::after{
     height: 650px;
     text-align: center;
   }
+  .mv-title{
+    font-size: 40px;
+  }
+
+  .mv-text{
+    font-size: 18px;
+  }
+
 
 }
 
