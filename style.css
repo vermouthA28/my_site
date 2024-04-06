@@ -469,6 +469,54 @@ h2::after{
 
 
 
+  .strength-group{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  /*profile*/
+  .profile{
+    background-color: #ECEFF1;
+  }
+  
+  .profile-group{
+    width: 1024px;
+    display: flex;
+    padding: 30px 0 90px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-left{
+    width: 50%;
+  }
+  .profile-right{
+    width: 50%;
+  }
+  
+  .profile-picture{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(img2/my-icon.jpg);
+    border-radius: 50%;
+  }
+  
+  .profile-title{
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .profile-text{
+    font-size: 16px;
+    padding: 5px 0 20px 0;
+  
+  }
+
+
+
+
 
 
 }
