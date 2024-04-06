@@ -475,12 +475,12 @@ h2::after{
     margin: 0 auto;
     width: 50%;
   }
-  
+
   /*profile*/
   .profile{
     background-color: #ECEFF1;
   }
-  
+
   .profile-group{
     width: 1024px;
     display: flex;
@@ -494,25 +494,28 @@ h2::after{
   .profile-right{
     width: 50%;
   }
-  
+
   .profile-picture{
     width: 250px;
     height: 250px;
     margin: 0 auto;
     background-image: url(img2/my-icon.jpg);
     border-radius: 50%;
+    background-position: center;
   }
-  
+
   .profile-title{
     font-size: 20px;
     margin-top: 0;
   }
-  
+
   .profile-text{
     font-size: 16px;
     padding: 5px 0 20px 0;
-  
+
   }
+
+
 
 
 
