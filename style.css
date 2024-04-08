@@ -399,7 +399,6 @@ h2::after{
     background-image: url(img2/code.png);
     background-size: cover;
     background-position: center;
-    max-width: 100%;
     width: 90%;
     height: 650px;
     text-align: center;
@@ -412,14 +411,15 @@ h2::after{
     font-size: 18px;
   }
 
-
-
-
   .heading-text{
     padding-top: 30px;
     text-align: center;
     font-size: 16px;
     font-color: #000000;
+  }
+
+  .portfolio{
+    width: 90%;
   }
 
   .pc-br{ display: none; }
@@ -467,7 +467,9 @@ h2::after{
     background-image: url(img2/webcamp-mother.png);
   }
 
-
+  .feature{
+    width: 90%;
+  }
 
   .strength-group{
     display: block;
@@ -478,16 +480,17 @@ h2::after{
 
   /*profile*/
   .profile{
-    background-color: #ECEFF1;
+    width: 90%;
+    text-align: center;
   }
 
   .profile-group{
-    width: 1024px;
-    display: flex;
-    padding: 30px 0 90px 0;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
+
   .profile-left{
     width: 50%;
   }
@@ -495,13 +498,10 @@ h2::after{
     width: 50%;
   }
 
-  .profile-picture{
-    width: 250px;
+  .pf-picture{
+    width: 90%;
     height: 250px;
     margin: 0 auto;
-    background-image: url(img2/my-icon.jpg);
-    border-radius: 50%;
-    background-position: center;
   }
 
   .profile-title{
