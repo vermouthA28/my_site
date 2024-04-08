@@ -222,7 +222,6 @@ h2::after{
 }
 .contact-right{
   width: 50%;
-
 }
 
 .contact-left-content{
@@ -434,8 +433,7 @@ h2::after{
   }
 
   .pf-picture{
-    width: 300px;
-    height: 250px;
+
     background-size: cover;
     background-position: center;
     display: inline-block; /* 行内ブロック要素として振る舞う */
@@ -448,6 +446,8 @@ h2::after{
   .bg-2{
     background-image: url(img2/websuku.png);
     margin: 0 10px 10px 0;
+    width: 300px;
+    height: 250px;
   }
 
   .bg-3{
@@ -457,6 +457,8 @@ h2::after{
   .bg-4{
     background-image: url(img2/webcamp.png);
     margin: 0 10px 0 0;
+    width: 300px;
+    height: 250px;
   }
 
   .bg-5{
@@ -465,6 +467,8 @@ h2::after{
 
   .bg-6{
     background-image: url(img2/webcamp-mother.png);
+    width: 300px;
+    height: 250px;
   }
 
   .feature{
@@ -472,36 +476,47 @@ h2::after{
   }
 
   .strength-group{
-    display: block;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    display: grid;
+    place-content: center;
+
   }
 
   /*profile*/
   .profile{
     width: 90%;
-    text-align: center;
   }
 
-  .profile-group{
+  .profile-group {
     width: 90%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto; /* 水平方向に中央揃え */
+    text-align: center; /* 内部のテキストを中央揃え */
+    display: block; /* ブロック要素として表示 */
+    /* その他のスタイル */
   }
 
   .profile-left{
-    width: 50%;
+    width: 90%;
+    margin: 0 auto; /* 水平方向に中央揃え */
+    text-align: center; /* 内部のテキストを中央揃え */
+    display: block; /* ブロック要素として表示 */
+    margin-bottom: 20px;
   }
   .profile-right{
-    width: 50%;
+    width: 90%;
+    margin: 0 auto; /* 水平方向に中央揃え */
+    text-align: center; /* 内部のテキストを中央揃え */
+    display: block; /* ブロック要素として表示 */
+
   }
 
   .pf-picture{
     width: 90%;
     height: 250px;
-    margin: 0 auto;
+    display: block;
+    padding: 30px auto 20px auto;
   }
 
   .profile-title{
@@ -513,6 +528,31 @@ h2::after{
     font-size: 16px;
     padding: 5px 0 20px 0;
 
+  }
+
+  .contact{
+    width: 90%;
+  }
+
+  .contact-group{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+
+  }
+
+  .contact-left{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  .contact-right{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
   }
 
 
