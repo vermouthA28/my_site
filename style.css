@@ -208,8 +208,6 @@ h2::after{
 
 }
 
-
-
 .contact-group{
   width: 800px;
   display: flex;
@@ -539,7 +537,6 @@ h2::after{
     margin: 0 auto;
     text-align: center;
     display: block;
-
   }
 
   .contact-left{
