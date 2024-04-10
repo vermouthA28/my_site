@@ -551,7 +551,9 @@ h2::after{
     text-align: center;
     display: block;
   }
-
+  .footer{
+    width: 90%;
+  }
 
 
 
